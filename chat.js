@@ -1363,7 +1363,7 @@ var ajaxChat = {
 		}
 		this.blinkOnNewMessage(dateObject, userID, userName, userRole, messageID, messageText, channelID, ip);
 		this.playSoundOnNewMessage(dateObject, userID, userName, userRole, messageID, messageText, channelID, ip);
-		alert('[' + dateObject + '] ' + userName + ': ' + messageText);
+		alert('[' + this.formatDate(this.settings['dateFormat'], dateObject) + '] ' + userName + ': ' + messageText);
 		return true;
 	},
 
