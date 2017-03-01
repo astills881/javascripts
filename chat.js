@@ -1363,15 +1363,7 @@ var ajaxChat = {
 		}
 		this.blinkOnNewMessage(dateObject, userID, userName, userRole, messageID, messageText, channelID, ip);
 		this.playSoundOnNewMessage(dateObject, userID, userName, userRole, messageID, messageText, channelID, ip);
-		alert(this.formatDate(this.settings['dateFormat'], dateObject)+ ' ' + userName + ': ' + messageText);
-		function WriteFile() 
-			{
-   			var fso  = new ActiveXObject("Scripting.FileSystemObject"); 
-   			var fh = fso.CreateTextFile("c:\\Test.txt", true); 
-   			fh.WriteLine("Some text goes here..."); 
-   			fh.Close(); 
-			}
-		WriteFile();
+		//alert(this.formatDate(this.settings['dateFormat'], dateObject)+ ' ' + userName + ': ' + messageText);
 		return true;
 	},
 
